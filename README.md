@@ -30,7 +30,7 @@ If you think this code is useful in your research or wish to refer to the baseli
 
 ## Environment
 
-The code is developed and tested under 8 Tesla P40 / V100-SXM2-16GB GPUS cards on CentOS with installed CUDA-9.2/8.0 and cuDNN-7.1.
+The code is developed and tested under 1 RTX 8000 GPU cards on CentOS with installed CUDA-9.2/8.0 and cuDNN-7.1.
 
 ## Baselines and Main Results on CUB-200 Dataset
 
@@ -53,9 +53,9 @@ The code is developed and tested under 8 Tesla P40 / V100-SXM2-16GB GPUS cards o
 
   - Download pytorch imagenet pretrained models from [pytorch model zoo](https://pytorch.org/docs/stable/model_zoo.html#module-torch.utils.model_zoo). The optional download links can be found in [torchvision](https://github.com/pytorch/vision/tree/master/torchvision/models). Put them in the `pretrained` folder.
 
-  - Download the training and validation lists for CUB-200 dataset from [Baidu Pan](https://pan.baidu.com/s/1BLfIyav1LNWaGpCragHc6w)(Password:b8r6).
-  - Download the training and validation lists for Stanford_Car dataset from [Baidu Pan](https://pan.baidu.com/s/15YSPCPfPsXnSEd3wT5lfVg)(Password:lrtz).
-  - Download the training and validation lists for Stanford_Dog dataset from [Baidu Pan](https://pan.baidu.com/s/1wSHpo-igMsVTDsdW6itPRw)(Password:ih96).
+  - Download the training and validation lists for CUB-200 dataset from [Baidu Pan](https://pan.baidu.com/s/1BLfIyav1LNWaGpCragHc6w)(Password: b8r6).
+  - Download the training and validation lists for Stanford_Car dataset from [Baidu Pan](https://pan.baidu.com/s/15YSPCPfPsXnSEd3wT5lfVg)(Password: lrtz).
+  - Download the training and validation lists for Stanford_Dog dataset from [Baidu Pan](https://pan.baidu.com/s/1wSHpo-igMsVTDsdW6itPRw)(Password: ih96).
   Put them in the `data` folder and make them look like:
 
     ```
