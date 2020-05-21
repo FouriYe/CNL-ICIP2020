@@ -4,7 +4,7 @@ By Zihan Ye (zihhye@outlook.com), Fuyuan Hu, Yin Liu (echoooooliu1998@gmail.com)
 
 ## Introduction
 
-This is a [PyTorch](https://pytorch.org/) implementation for the paper "Associating Multi-Scale Receptive Fields for Fine-grained Recognition" in ICIP2020. It brings the CNL models trained on the [CUB-200](http://www.vision.caltech.edu/visipedia/CUB-200.html), [Stanford-Dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html) and [Stanford-Cars](http://ai.stanford.edu/~jkrause/cars/car_dataset.html).
+This is a [PyTorch](https://pytorch.org/) implementation for the paper ["Associating Multi-Scale Receptive Fields for Fine-grained Recognition"](https://arxiv.org/abs/2005.09153) in ICIP2020. It brings the CNL models trained on the [CUB-200](http://www.vision.caltech.edu/visipedia/CUB-200.html), [Stanford-Dogs](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html) and [Stanford-Cars](http://ai.stanford.edu/~jkrause/cars/car_dataset.html).
 
 ![introfig](img/methods.png)
 
