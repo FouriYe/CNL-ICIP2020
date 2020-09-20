@@ -389,10 +389,10 @@ def load_partial_weight(model, pretrained, nl_layer_id):
     _model_dict.update(_pretrained_dict)
     return _model_dict
 
-def cnlnet50(pretrained=False, **kwargs):
+def cnlnet50(arch, pretrained=False, **kwargs):
     """Constructs a ResNet-50 model.
     """
-    model = CNLNet(Bottleneck, [3, 4, 6, 3],**kwargs)
+    model = CNLNet(arch=arch,Bottleneck, [3, 4, 6, 3],**kwargs)
     if pretrained:
         _pretrained = torch.load('./pretrained/resnet50-19c8e357.pth')
         _model_dict = load_partial_weight(model, _pretrained, 5)
@@ -400,10 +400,10 @@ def cnlnet50(pretrained=False, **kwargs):
     return model
 
 
-def cnlnet101(pretrained=False, **kwargs):
+def cnlnet101(arch, pretrained=False, **kwargs):
     """Constructs a ResNet-101 model.
     """
-    model = CNLNet(Bottleneck, [3, 4, 23, 3],**kwargs)
+    model = CNLNet(arch=arch,Bottleneck, [3, 4, 23, 3],**kwargs)
     if pretrained:
         _pretrained = torch.load('./pretrained/resnet101-5d3b4d8f.pth')
         _model_dict = load_partial_weight(model, _pretrained, 22)
