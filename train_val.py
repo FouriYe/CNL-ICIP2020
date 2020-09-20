@@ -89,12 +89,12 @@ def main():
         imgs_fold = os.path.join(data_root, 'images')
         train_ann_file = os.path.join(data_root, 'cub_train.list')
         valid_ann_file = os.path.join(data_root, 'cub_val.list')
-    if dataset == 'dog':
+    elif dataset == 'dog':
         data_root = '/input/data/Standford_dog'
         imgs_fold = os.path.join(data_root, 'images')
         train_ann_file = os.path.join(data_root, 'dog_train.list')
         valid_ann_file = os.path.join(data_root, 'dog_val.list')
-    if dataset == 'car':
+    elif dataset == 'car':
         data_root = '/input/data/Standford_car'
         imgs_fold = os.path.join(data_root, 'images')
         train_ann_file = os.path.join(data_root, 'car_train.list')
