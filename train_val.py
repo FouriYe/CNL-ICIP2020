@@ -70,7 +70,10 @@ def main():
         args.arch == '152':
         batch_size = 128
     drop_ratio = 0.1
-    lr_drop_epoch_list = [51, 71, 91]
+    if dataset == 'cub':
+        lr_drop_epoch_list = [31, 51, 71]
+    else:
+        lr_drop_epoch_list = [51, 71, 91]
     epochs = 100
     eval_freq = 1
     gpu_ids = [0] if debug else [0]
